@@ -1,7 +1,61 @@
+body {
+  background-color: rosybrown;
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: white;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px; /*space around the component*/
+
+  /* border: 2px solid pink; */
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 h1 {
   text-align: center;
+  font-family: sans-serif;
+  font-size: 36px;
+}
+select {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 6px;
+}
+h2 {
+  margin: 0; /*no spacing bw h2 and date*/
+  font-size: 28px;
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0; /*spacing around top/bottom*/
+  padding: 20px 0; /*space from botton border*/
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+/*removes border for the last element */
+.city:last-child {
+  border: none;
+}
+.date {
+  opacity: 0.7;
+}
+.time {
+  font-size: 45px;
+  font-weight: bold;
+}
+.time small {
+  font-size: 24px;
+  line-height: 36px; /*space bw the lines*/
+  vertical-align: middle; /*moves to middle of page*/
 }
 
 footer {
   text-align: center;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
 }
