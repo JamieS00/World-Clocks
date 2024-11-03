@@ -32,6 +32,24 @@ let updateTime = () => {
       .format("h:mm:ss [<small>]A[</small>]");
     sydneyTimeElement.innerHTML = sydneytimeFormat;
   }
+
+  //JAMAICA
+
+  let jaElement = document.querySelector("#jamaica");
+
+  if (jaElement) {
+    //date & time element : target the classes date and time withing the LA div
+    let jaDateElement = jaElement.querySelector(".date");
+    let jaTimeElement = jaElement.querySelector(".time");
+
+    let JAdateFormat = moment.tz("America/Jamaica").format("MMMM Do YYYY");
+    jaDateElement.innerHTML = JAdateFormat;
+
+    let JAtimeFormat = moment
+      .tz("America/Jamaica")
+      .format("h:mm:ss [<small>]A[</small>]");
+    jaTimeElement.innerHTML = JAtimeFormat;
+  }
 };
 
 setInterval(updateTime, 1000);
