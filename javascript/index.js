@@ -40,6 +40,10 @@ let updateCity = (event) => {
   let cityTimeZone = event.target.value;
   //   console.log(cityTimeZone); //testing
 
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
+
   let cityName = cityTimeZone.replace("_", " ").split("/")[1]; //replces "_" w/ a space, then split into an array to get 2nd index[1]
   let cityTime = moment.tz(cityTimeZone).format("h:mm:ss");
   let amPm = moment.tz(cityTimeZone).format("A");
