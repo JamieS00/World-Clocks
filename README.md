@@ -21,7 +21,7 @@ The World Clocks Web Application is a time-based project that displays live cloc
 
 ## **How to Use**
 
-1.Clone this repository to your local machine.
-2.Open index.html in your web browser to view the application.
-3.Select a city from the dropdown menu to see its current local time and date.
-4Use the "All cities" link to return to the main view.
+1. Clone this repository to your local machine.
+2. Open index.html in your web browser to view the application.
+3. Select a city from the dropdown menu to see its current local time and date.
+4. Use the "All cities" link to return to the main view.
