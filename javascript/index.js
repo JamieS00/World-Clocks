@@ -73,8 +73,11 @@ let updateCity = (event) => {
             <h2>${cityName}</h2>
             <div class="date">${cityDate}</div>
           </div>
-          <div class="time">${cityTime} <small>${amPm}</small></div>
+          <div class="time">${cityTime} <small>${amPm}</small>
+          </div>
+          
   </div>
+  <a href="index.html">All cities</a>
   `;
 };
 
